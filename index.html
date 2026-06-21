@@ -1,0 +1,143 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Integral Boss Fight</title>
+<link rel="stylesheet" href="style.css">
+</head> <body> <div class="container">
+<h1>⚔️ Integral Boss Fight ⚔️</h1>
+
+<div id="startScreen">
+
+    <div class="boss-select">
+
+        <h2>Select Boss</h2>
+
+        <button class="boss-btn" data-hp="200">
+            Slime King (HP 200)
+        </button>
+
+        <button class="boss-btn" data-hp="500">
+            Goblin Chief (HP 500)
+        </button>
+
+        <button class="boss-btn" data-hp="1000">
+            Dragon Lord (HP 1000)
+        </button>
+
+    </div>
+
+</div>
+
+<div id="gameArea" class="hidden">
+
+    <div class="battle-panel">
+
+        <div class="status-card">
+
+            <h3>Boss HP</h3>
+
+            <div class="hp-bar">
+
+                <div id="bossHpFill"
+                     class="boss-fill">
+                </div>
+
+            </div>
+
+            <div id="bossHpText">
+                1000 / 1000
+            </div>
+
+        </div>
+
+        <div class="status-card">
+
+            <h3>Player HP</h3>
+
+            <div class="hp-bar">
+
+                <div id="playerHpFill"
+                     class="player-fill">
+                </div>
+
+            </div>
+
+            <div id="playerHpText">
+                100 / 100
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="info-panel">
+
+        <div class="info-box">
+            ⏱ Time
+            <span id="time">60</span>
+        </div>
+
+        <div class="info-box">
+            🔥 Combo
+            <span id="combo">0</span>
+        </div>
+
+        <div class="info-box">
+            ⚔ Damage
+            <span id="damage">0</span>
+        </div>
+
+    </div>
+
+    <div class="question-panel">
+
+        <div id="question"
+             class="question">
+
+            ∫ x² dx
+
+        </div>
+
+    </div>
+
+    <div class="choices">
+
+        <button class="choice-btn"
+                id="choice0">
+        </button>
+
+        <button class="choice-btn"
+                id="choice1">
+        </button>
+
+        <button class="choice-btn"
+                id="choice2">
+        </button>
+
+        <button class="choice-btn"
+                id="choice3">
+        </button>
+
+    </div>
+
+    <div id="message"
+         class="message">
+
+    </div>
+
+</div>
+
+<div id="resultScreen"
+     class="hidden">
+
+    <h2 id="resultTitle">
+
+    </h2>
+
+    <h3 id="resultStats">
+
+    </h3>
+
+    <button id="restartBtn">
+        Play Again
+    </button>
+
+</div>
+</div> <script src="game.js"></script> </body> </html>
